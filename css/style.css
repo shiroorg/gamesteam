@@ -265,15 +265,19 @@ h2{
 }
 
 @media (max-width: 992px) {
+	.list h2 {
+		text-align: center;
+	}
 	.logo:after {
 		width: 100%;
 	}
 	.logo:before {
-		width: 100%;
+		width: 193px;
 		height: 550px;
 		left: 50%;
-		top: -17%;
-		margin: 0;
+		top: -20%;
+		margin-top: 0;
+		margin-left: 10px;
 	}
 	.logo img{
 		width: 100%;
@@ -297,6 +301,7 @@ h2{
 		right: 54%;
 	}
 	.bg-el2 {
+		height: 500px;
 		top: 795px;
 		left: 54%;
 		width: 178px;
