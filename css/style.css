@@ -55,6 +55,71 @@ body{
 	position: relative;
 	overflow-x: hidden;
 }
+body.position-0 {
+	background-position-x: 0;
+	background-position-y: 0;
+}
+body.position-1 {
+	background-position-x: 3px;
+	background-position-y: 4px;
+}
+body.position-2 {
+	background-position-x: -4px;
+	background-position-y: -2px;
+}
+body.position-3 {
+	background-position-x: 4px;
+	background-position-y: -4px;
+}
+body.position-4 {
+	background-position-x: -4px;
+	background-position-y: 4px;
+}
+body.position-5 {
+	background-position-x: -2px;
+	background-position-y: 4px;
+}
+body.position-6 {
+	background-position-x: -4px;
+	background-position-y: 2px;
+}
+body.position-7 {
+	background-position-x: -4px;
+	background-position-y: 2px;
+}
+body.position-8 {
+	background-position-x: -2px;
+	background-position-y: 4px;
+}
+body.position-9 {
+	background-position-x: -1px;
+	background-position-y: 3px;
+}
+body.position-10 {
+	background-position-x: -3px;
+	background-position-y: 1px;
+}
+body.rotate-0 {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+body.rotate-90 {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+body.rotate-180 {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
 
 body:after{
 	content:"";
@@ -260,6 +325,20 @@ h2{
 	bottom: 100px;
 	left: 100%;
 }
+.cover-list-item img:first-child {
+	position: relative;
+	z-index: 25;
+}
+.cover-list-item img.photo {
+	position: absolute;
+	left: 0;
+	margin: auto;
+	z-index: 10;
+	width: 160px;
+	border-radius: 500px;
+	margin-left: 100px;
+	margin-top: 10px;
+}
 @media (min-width: 992px) {
 
 }
@@ -318,5 +397,20 @@ h2{
 	.bg-el4 {
 		top: 2902px;
 		left: 3%;
+	}
+
+	.cover-list-item img:first-child {
+		position: relative;
+		z-index: 25;
+	}
+	.cover-list-item img.photo  {
+		position: absolute;
+		left: 0;
+		margin: auto;
+		z-index: 10;
+		width: 50%;
+		border-radius: 500px;
+		margin-left: 25%;
+		margin-top: 5%;
 	}
 }
