@@ -197,10 +197,19 @@ h2{
 	color: #FFFFFF;
 }
 .intro{
+	background: rgb(252,70,107);
+	background: radial-gradient(circle, rgb(252 70 107 / 70%) 0%, rgb(63 94 251 / 70%) 100%);
+	/*background-color: #00000040;*/
+	border-radius: 25px;
+	border: 5px solid #c9346b73;
+	padding: 20px;
 	margin-top: 70px;
 	margin-bottom: 50px;
+	z-index: 25;
+	position: relative;
 }
 .intro p{
+	text-align: center;
 	font-family: 'Jost';
 	font-style: normal;
 	font-weight: 400;
@@ -210,6 +219,8 @@ h2{
 }
 
 .list{
+	max-width: 1000px;
+	margin: auto;
 	margin-top: 60px;
 }
 .list ul{
@@ -217,7 +228,11 @@ h2{
 }
 .list li {
 	display: flex;
-	padding-bottom: 50px;
+	background-color: #00000040;
+	border-radius: 25px;
+	border: 1px solid #ffffff2b;
+	padding-bottom: 25px;
+	padding-top: 10px;
 }
 .cover-list-item img{
 	width: 203px;
@@ -228,7 +243,7 @@ h2{
 .list .title-list-item {
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 24px;
 	line-height: 29px;
 	color: #FFFFFF;
 	padding-bottom: 20px;
@@ -236,12 +251,13 @@ h2{
 .list .text-list-item{
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 17px;
 	line-height: 23px;
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(255, 255, 255, 0.9);
 	padding-bottom: 16px;
 }
 .list .btn-list-item{
+	margin-right: 25px;
 	position: relative;
 	display: inline-block;
 	width: 185px;
@@ -289,6 +305,43 @@ h2{
 	background: url(../images/btn-bottom.png) 0 0 no-repeat;
 	z-index: 1;
 }
+.list .btn-list-item.invert {
+	color: white;
+}
+.list .btn-list-item.invert .btn-list-item-top{
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 185px;
+	height: 40px;
+	background: url(../images/btn-bottom.png) 0 0 no-repeat;
+	z-index: 3;
+}
+.list .btn-list-item.invert .btn-list-item-middle{
+	content: "";
+	position: absolute;
+	display: block;
+	top: 5px;
+	left: 5px;
+	width: 193px;
+	height: 48px;
+	background: url(../images/btn-mid.png) 0 0 no-repeat;
+	z-index: 2;
+}
+.list .btn-list-item.invert .btn-list-item-bottom{
+	content: "";
+	position: absolute;
+	display: block;
+	top: -5px;
+	left: -10px;
+	width: 185px;
+	height: 40px;
+	background: url(../images/btn-top.png) 0 0 no-repeat;
+	z-index: 1;
+}
+
 .bg-el1{
 	position: absolute;
 	background: url(../images/bg-round.png) 0 0 no-repeat;
@@ -382,14 +435,16 @@ h2{
 	.bg-el2 {
 		height: 500px;
 		top: 795px;
-		left: 54%;
+		left: auto;
+		right: 0;
 		width: 178px;
 		background-size: 500px;
 		background-position-x: -19px;
 	}
 	.bg-el3 {
 		top: 2287px;
-		left: 50%;
+		left: auto;
+		right: 0;
 		width: 196px;
 		background-size: 500px;
 		background-position-x: -19px;
@@ -402,6 +457,7 @@ h2{
 	.cover-list-item img:first-child {
 		position: relative;
 		z-index: 25;
+		max-width: 250px;
 	}
 	.cover-list-item img.photo  {
 		position: absolute;
